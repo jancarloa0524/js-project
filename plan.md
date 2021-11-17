@@ -18,5 +18,5 @@ The following is a checklist that I will follow as I make my project:
     * While loop (EC) _Need to do..._
 4. Need to fix...
     * Value does not return properly (i.e. $50, 2%, 2 people, returns $25.5) _Need to do..._
-    * If the user only inputs 1 person, the document.write should reflect that _Need to do..._
+    * If the user only inputs 1 person, the document.write should reflect that _Done..._
     * If the user does  not input a positive integer for each, the calculator should reflect that _Need to do..._
