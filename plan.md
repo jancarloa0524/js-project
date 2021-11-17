@@ -7,14 +7,16 @@ The following is a checklist that I will follow as I make my project:
 2. prototype created? _Done!_
 3. Incorporated the following requruirements? _Need to do..._
     * prompt _Done!_
-    * alert _Need to do..._
-    * document.write() __Done!_
+    * alert _Done!_
+    * document.write() _Done!_
     * string concantenation _Done!_
     * array _Need to do..._
-    * function parameter _Done!__
-    * function return __Need to do..._
-    * conditional _Need to do..._
+    * function parameter _Done!_
+    * function return _Done!..._
+    * conditional _Done!_
     * COMMENTS!!! _Need to do..._
     * While loop (EC) _Need to do..._
 4. Need to fix...
     * Value does not return properly (i.e. $50, 2%, 2 people, returns $25.5) _Need to do..._
+    * If the user only inputs 1 person, the document.write should reflect that _Need to do..._
+    * If the user does  not input a positive integer for each, the calculator should reflect that _Need to do..._
