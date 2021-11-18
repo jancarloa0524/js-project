@@ -1,17 +1,13 @@
 /* Here, I establish all the global variables I will be using in my code. */
-// This is a global variable for the number of people that may split a bill (decided by the user!)
-var numOfPeople;
-//When the page starts, this is set to true so that the while() loop in printAns() runs repeatedly until it is false.
-var keepCalc = true;
-// This is used in the while() loop for the function function printAns()
-var valuesArray = [0];
+var numOfPeople; // This is a global variable for the number of people that may split a bill (decided by the user!)
+var keepCalc = true; //When the page starts, this is set to true so that the while() loop in printAns() runs repeatedly until it is false.
+var valuesArray = [0]; // This is used in the while() loop for the function function printAns()
 
 // Alerts the user to what will happen when they use my calculator, before running the main function of the program
 alert('Welcome to my Tip Calculator! This calculator will ask you if you have any more other calculations to make. No calculations will be shown until you type "no" exactly as is. So, do all the calculations you want, but type "no" in the correct prompt when finished.' );
 printAns();
 
-// This function is what calculates the total when the user inputs the bill total, tip
-function tipCalc(tipPercentage, initialTotal, finalTotal) {
+function tipCalc(tipPercentage, initialTotal, finalTotal) { // This function is what calculates the total when the user inputs the bill total, tip, and number of people splitting the bill
   // The user is first prompted on the initial total of the bill, the tip percentage they want to provide, and by how many people they split the bill
   initialTotal = prompt("What is the total? (Please only write the number, example: 50)");
   tipPercentage = prompt("What is the tip percentage? (Example: 5%)");
@@ -25,8 +21,7 @@ function tipCalc(tipPercentage, initialTotal, finalTotal) {
   return finalTotal;
 }
 
-// This function essentially checks what to do based on the number of people.
-function check() {
+function check() { // This function essentially checks what to do based on the number of people.
   // The following is quite simple, when the number of people is equal to 1, the program writes something a little different, compared to if there were more then 1 person.
   if (numOfPeople === "1") {
     document.write("!</span>");
@@ -44,8 +39,7 @@ function totalArrayValue(array) {
         return sum;
 }
 
-// This is the main function of the program, to print the output of the user's inputs, that output being what they owe after tips/bill split are applied
-function printAns(total) {
+function printAns(total) { // This is the main function of the program, to print the output of the user's inputs, that output being what they owe after tips/bill split are applied
   total = tipCalc();
   // After declaring the variable: total, being equal to the result of the function tipCalc(), it will write down a statement, and use the function check() to figure out it's ending. The total is then also written on the right side of the page. 
   document.write('<span class="printed">You need to pay $' + total);
@@ -58,8 +52,7 @@ function printAns(total) {
         valuesArray.push(total); //everytime the program repeats, the previous value calculated is added to an array. 
         if (userResponse == "no") {
           keepCalc = false;
-          // When the user finally answers "no", the calculator displays the total value of everything in the right colomn, which has been put into an array. You'll notice this value is multiplied by 100, rounded, and divided by 100. This is because the final results came out a little wonky sometimes, so this was required to make sure we got the proper value. 
-          document.write('<span class="array"> Total = $' + Math.round(totalArrayValue(valuesArray) * 100) / 100 + '</span>');
+          document.write('<span class="array"> Total = $' + Math.round(totalArrayValue(valuesArray) * 100) / 100 + '</span>'); // When the user finally answers "no", the calculator displays the total value of everything in the right colomn, which has been put into an array. You'll notice this value is multiplied by 100, rounded, and divided by 100. This is because the final results came out a little wonky sometimes, so this was required to make sure we got the proper value. 
         } else {
           printAns();
         }
