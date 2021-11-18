@@ -51,7 +51,7 @@ function printAns(total) { // This is the main function of the program, to print
         valuesArray.push(total); //everytime the program repeats, the previous value calculated is added to an array. 
         if (userResponse == "no") {
           keepCalc = false;
-          document.write('<span class="array"> Total = $' + Math.round(totalArrayValue(valuesArray) * 100) / 100 + '</span>'); // When the user finally answers "no", the calculator displays the total value of everything in the right colomn, which has been put into an array. You'll notice this value is multiplied by 100, rounded, and divided by 100. This is because the final results came out a little wonky sometimes, so this was required to make sure we got the proper value. 
+          document.write('<br> <span class="array"> Total = $' + Math.round(totalArrayValue(valuesArray) * 100) / 100 + '</span>'); // When the user finally answers "no", the calculator displays the total value of everything in the right colomn, which has been put into an array. You'll notice this value is multiplied by 100, rounded, and divided by 100. This is because the final results came out a little wonky sometimes, so this was required to make sure we got the proper value. 
         } else {
           printAns();
         }

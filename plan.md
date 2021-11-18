@@ -5,7 +5,7 @@ The following is a checklist that I will follow as I make my project:
 
 1. plan.md written? _Done!_
 2. prototype created? _Done!_
-3. Incorporated the following requruirements? _Need to do..._
+3. Incorporated the following requruirements? _Done!_
     * prompt _Done!_
     * alert _Done!_
     * document.write() _Done!_
