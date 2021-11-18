@@ -32,11 +32,10 @@ function check() { // This function essentially checks what to do based on the n
 
 // This function is very difficult for me to explain, becuase I followed a tutorial on this. But to put it simply, this takes all the values in an array, and adds them together.
 function totalArrayValue(array) {
-        let sum = 0;
-        for (let i = 0; i < array.length; i++)
-            sum += array[i];
-
-        return sum;
+  let sum = 0;
+  for (let i = 0; i < array.length; i++)
+  sum += array[i];
+  return sum;
 }
 
 function printAns(total) { // This is the main function of the program, to print the output of the user's inputs, that output being what they owe after tips/bill split are applied
