@@ -10,12 +10,12 @@ The following is a checklist that I will follow as I make my project:
     * alert _Done!_
     * document.write() _Done!_
     * string concantenation _Done!_
-    * array _Need to do..._
+    * array _Done!_
     * function parameter _Done!_
-    * function return _Done!..._
+    * function return _Done!_
     * conditional _Done!_
-    * COMMENTS!!! _Need to do..._
-    * While loop (EC) _Need to do..._
+    * COMMENTS!!! _Done_
+    * While loop (EC) _Done!_
 4. Need to fix...
     * Value does not return properly (i.e. $50, 2%, 2 people, returns $25.5) _Need to do..._
     * If the user only inputs 1 person, the document.write should reflect that _Done..._
